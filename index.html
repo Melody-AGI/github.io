@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>太空射击游戏</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            background-color: #222;
+            color: white;
+            font-family: Arial, sans-serif;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            min-height: 100vh;
+        }
+        h1 {
+            margin-top: 20px;
+            margin-bottom: 10px;
+        }
+        .game-container {
+            margin: 20px 0;
+        }
+        .instructions {
+            max-width: 800px;
+            margin: 20px;
+            padding: 15px;
+            background-color: #333;
+            border-radius: 8px;
+        }
+        canvas {
+            display: block;
+            margin: 0 auto;
+            border: 2px solid #444;
+        }
+    </style>
+</head>
+<body>
+    <h1>太空射击游戏</h1>
+    <div class="game-container">
+        <canvas id="canvas" oncontextmenu="event.preventDefault()" tabindex="1"></canvas>
+    </div>
+    <div class="instructions">
+        <h2>游戏说明：</h2>
+        <p>使用左右方向键控制飞船移动</p>
+        <p>按空格键发射子弹</p>
+        <p>击中敌人获得10分</p>
+        <p>被敌人碰到游戏结束</p>
+        <p>游戏结束后按R键重新开始</p>
+    </div>
+    
+    <script src="game.js"></script>
+</body>
+</html>
